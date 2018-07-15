@@ -35,7 +35,7 @@ var app = {
     initialize: function() {
         var self = this;
         this.store = new MemoryStore(function() {
-            //renderHomeView();
+            renderHomeView();
         });
         $('.search-key').on('keyup', $.proxy(this.findByName, this));
     }
